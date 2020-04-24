@@ -1,0 +1,38 @@
+
+body {
+  background-image: url(screenshot_panda.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  background-position: center;
+  margin: 0px;
+  width: 100vw;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  70% {
+    top: calc(100vh - 200px);
+  }
+  85% {
+    top: calc(100vh - 320px);
+  }
+  100% {
+    top: calc(100vh - 200px);
+  }
+}
+
+#red {
+  background-color: #f77e7e;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: calc(100vh - 200px);
+  left: calc(50vw - 100px);
+  border-radius: 50%;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
